@@ -101,13 +101,35 @@ const controller = {
     localStorage.setItem("darkTheme", !isDarkTheme);
   },
   saveSession: function () {
-    // Add logic to save the current session
+    const sessionData = {
+      tabs: model.tabs,
+      currentTab: model.currentTab,
+    };
+
+    // Save the session data to localStorage
+    localStorage.setItem("browserSession", JSON.stringify(sessionData));
     console.log("Session saved!");
   },
 
   loadSession: function () {
-    // Add logic to load a saved session
-    console.log("Session loaded!");
+    // Retrieve the session data from localStorage
+    const storedSession = localStorage.getItem("browserSession");
+
+    if (storedSession) {
+      const sessionData = JSON.parse(storedSession);
+
+      // Update the model with the loaded session data
+      model.tabs = sessionData.tabs || [];
+      model.currentTab = sessionData.currentTab || null;
+
+      // Update the view
+      view.renderTabs();
+      view.renderIframe();
+
+      console.log("Session loaded!");
+    } else {
+      console.log("No saved session found.");
+    }
   },
 };
 
@@ -131,4 +153,3 @@ async function getTitleFromUrl(url) {
 }
 
 controller.addTab("Google", "https://www.google.com");
-controller.addTab("OpenAI", "https://www.openai.com");

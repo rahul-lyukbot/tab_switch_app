@@ -30,7 +30,7 @@ body {
   color: #000000;
 }
 .light-theme button {
-  background: black;
+  background: rgba(1, 1, 1, 0.8);
   color: white;
 }
 
@@ -61,8 +61,8 @@ body {
 }
 
 .dark-theme button {
-  background: #cad9d6;
-  color: #63767a;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
 }
 
 #menu-bar {
@@ -76,6 +76,7 @@ body {
 #menu-bar button {
   padding: 8px;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 #tabs-container {
