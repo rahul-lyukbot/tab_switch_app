@@ -22,4 +22,3 @@ A simple browser tab system implemented using HTML, CSS, and JavaScript with a f
 
 
 
-Replace placeholders like `rahul-lyukbot` with your GitHub username, and adjust the content as needed to fit the specifics of your project. Additionally, you may want to include a license file (`LICENSE`) in your repository.
