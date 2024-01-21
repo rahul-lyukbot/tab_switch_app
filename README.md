@@ -19,3 +19,7 @@ A simple browser tab system implemented using HTML, CSS, and JavaScript with a f
 
    ```bash
    git clone https://github.com/your-username/browser-tab-system.git
+
+
+
+Replace placeholders like `rahul-lyukbot` with your GitHub username, and adjust the content as needed to fit the specifics of your project. Additionally, you may want to include a license file (`LICENSE`) in your repository.
