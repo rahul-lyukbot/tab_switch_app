@@ -4,9 +4,82 @@ body {
   padding: 0;
 }
 
+/* Light Theme */
+.light-theme {
+  background: #cad9d6; /* Light background color */
+  color: #000000; /* Dark text color */
+}
+
+.light-theme #tabs-container {
+  border-bottom: 1px solid #cccccc; /* Light border color */
+}
+
+.light-theme .tab {
+  background-color: #f2f2f2; /* Light tab background color */
+  color: #000000; /* Dark tab text color */
+}
+
+.light-theme #iframe-container {
+  border: 1px solid #cccccc; /* Light border color for iframe container */
+}
+
+/* Font Awesome adjustments for light theme */
+.light-theme .fa-adjust,
+.light-theme .fa-save,
+.light-theme .fa-upload {
+  color: #000000;
+}
+.light-theme button {
+  background: black;
+  color: white;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background: #63767a;
+  color: #ffffff; /* Light text color */
+}
+
+.dark-theme #tabs-container {
+  border-bottom: 1px solid #555555; /* Dark border color */
+}
+
+.dark-theme .tab {
+  background-color: #444444; /* Dark tab background color */
+  color: #ffffff; /* Light tab text color */
+}
+
+/* Font Awesome adjustments for light theme */
+.light-theme .fa-adjust,
+.light-theme .fa-save,
+.light-theme .fa-upload {
+  color: white;
+}
+
+.dark-theme #iframe-container {
+  border: 1px solid #555555; /* Dark border color for iframe container */
+}
+
+.dark-theme button {
+  background: #cad9d6;
+  color: #63767a;
+}
+
+#menu-bar {
+  margin-bottom: 10px;
+}
+
+#menu-bar {
+  margin-bottom: 10px;
+}
+
+#menu-bar button {
+  padding: 8px;
+  cursor: pointer;
+}
+
 #tabs-container {
   display: flex;
-  border-bottom: 1px solid #ccc;
 }
 
 .tab {
@@ -22,6 +95,7 @@ body {
 }
 
 #iframe-container {
+  margin-top: 2rem;
   flex: 1;
   height: 70vh;
 }
@@ -30,4 +104,18 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+#controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
 }

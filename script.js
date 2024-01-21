@@ -80,7 +80,42 @@ const controller = {
       view.renderIframe();
     }
   },
+  toggleTheme: function () {
+    const body = $("body");
+
+    // Check if the current theme is dark
+    const isDarkTheme = body.hasClass("dark-theme");
+
+    // Toggle to the opposite theme
+    if (isDarkTheme) {
+      // If currently in dark theme, switch to light theme
+      body.removeClass("dark-theme");
+      body.addClass("light-theme");
+    } else {
+      // If currently in light theme, switch to dark theme
+      body.removeClass("light-theme");
+      body.addClass("dark-theme");
+    }
+
+    // Save the user's theme preference to localStorage
+    localStorage.setItem("darkTheme", !isDarkTheme);
+  },
+  saveSession: function () {
+    // Add logic to save the current session
+    console.log("Session saved!");
+  },
+
+  loadSession: function () {
+    // Add logic to load a saved session
+    console.log("Session loaded!");
+  },
 };
+
+// Check for user's theme preference in localStorage and apply it
+const isDarkTheme = localStorage.getItem("darkTheme") === "true";
+if (isDarkTheme) {
+  $("body").addClass("dark-theme");
+}
 
 // function to fetch page title from URL
 async function getTitleFromUrl(url) {

@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browser Tab System</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
-  <body>
+  <body class="light-theme">
+    <div id="menu-bar">
+      <button onclick="controller.toggleTheme()">
+        <i class="fas fa-adjust"></i> Toggle Theme
+      </button>
+      <button onclick="controller.saveSession()">
+        <i class="fas fa-save"></i> Save Session
+      </button>
+      <button onclick="controller.loadSession()">
+        <i class="fas fa-upload"></i> Load Session
+      </button>
+    </div>
     <div id="tabs-container"></div>
     <div id="iframe-container"></div>
 
     <div id="controls">
-      <button onclick="controller.addTab()">Add Tab</button>
-      <button onclick="controller.closeTab()">Close Tab</button>
+      <button class="add-btn" onclick="controller.addTab()">Add Tab</button>
+      <button class="close-btn" onclick="controller.closeTab()">
+        Close Tab
+      </button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
