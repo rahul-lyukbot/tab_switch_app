@@ -6,21 +6,21 @@ body {
 
 /* Light Theme */
 .light-theme {
-  background: #cad9d6; /* Light background color */
-  color: #000000; /* Dark text color */
+  background: #cad9d6;
+  color: #000000;
 }
 
 .light-theme #tabs-container {
-  border-bottom: 1px solid #cccccc; /* Light border color */
+  border-bottom: 1px solid #cccccc;
 }
 
 .light-theme .tab {
-  background-color: #f2f2f2; /* Light tab background color */
-  color: #000000; /* Dark tab text color */
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .light-theme #iframe-container {
-  border: 1px solid #cccccc; /* Light border color for iframe container */
+  border: 1px solid #cccccc;
 }
 
 /* Font Awesome adjustments for light theme */
@@ -37,16 +37,16 @@ body {
 /* Dark Theme */
 .dark-theme {
   background: #63767a;
-  color: #ffffff; /* Light text color */
+  color: #ffffff;
 }
 
 .dark-theme #tabs-container {
-  border-bottom: 1px solid #555555; /* Dark border color */
+  border-bottom: 1px solid #555555;
 }
 
 .dark-theme .tab {
-  background-color: #444444; /* Dark tab background color */
-  color: #ffffff; /* Light tab text color */
+  background-color: #444444;
+  color: #ffffff;
 }
 
 /* Font Awesome adjustments for light theme */
@@ -57,7 +57,7 @@ body {
 }
 
 .dark-theme #iframe-container {
-  border: 1px solid #555555; /* Dark border color for iframe container */
+  border: 1px solid #555555;
 }
 
 .dark-theme button {
